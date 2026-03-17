@@ -1,1 +1,38 @@
-This is an example for git 
+# Show cluster info
+kubectl cluster-info
+
+# View all nodes
+kubectl get nodes
+
+# View all pods in default namespace
+kubectl get pods
+
+# View pods in all namespaces
+kubectl get pods -A
+
+# Describe a pod
+kubectl describe pod <pod-name>
+
+# Create resources from a YAML file
+kubectl apply -f <file.yaml>
+
+# Delete resources from a YAML file
+kubectl delete -f <file.yaml>
+
+# View deployments
+kubectl get deployments
+
+# Scale a deployment
+kubectl scale deployment <name> --replicas=3
+
+# View services
+kubectl get svc
+
+# Get logs of a pod
+kubectl logs <pod-name>
+
+# Exec into a running pod
+kubectl exec -it <pod-name> -- /bin/bash
+
+# Delete a pod
+kubectl delete pod <pod-name>
